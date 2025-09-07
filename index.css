@@ -1,0 +1,38 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body,html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background: linear-gradient(300deg, rgb(184, 28, 223), rgb(34, 90, 149));
+ }
+ .first-div{
+    height: 400px;
+    width: 400px;
+    border: 15px solid aqua;
+    border-bottom: 15px solid white;
+    border-radius: 50%;
+    position: fixed;
+ }
+
+.first-div{
+    animation-name: loader;
+    animation-duration:0.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0ms;
+    animation-direction: linear;
+    position: fixed;
+}
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
